@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-
+    // api del clima
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(ObtenerLocalizacion);
     }else{
@@ -37,6 +37,7 @@ $(document).ready(function () {
 
 
 });
+//Funcion que de validacion
 function validar(){
     var html = "";
     var nombre = $("#Nombretxt").val();

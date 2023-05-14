@@ -7,82 +7,98 @@
     <title>Menu</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='/Css/main.css'>
+    <script src='main.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
-<body>                                                      
-    <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                   
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <img src="../img/LosMiRey.png" class="d-block w-40" alt="..." href="#"></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="comidas.html">Comida</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Locales.html">Locales</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="Carrito.html">Mi Carrito</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+<body>
+    <div class="p-3 text-success-emphasis bg-success-subtle border border-success-subtle rounded-3">
+        <header>
+            <div class="container">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
 
-        </div>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <img src="../img/LosMiRey.png" class="d-block w-40" alt="..." href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="main.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="comidas.html">Comida</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Locales.html">Locales</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="Carrito.html">Mi Carrito</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+            </div>
         </header>
         <br>
 
         <main>
             <div class="container">
                 <div class="mb-3">
-                    <h4 id="temperatura" ></h4>
+                    <h4 id="temperatura"></h4>
                     <h4 id="viento"></h4>
                     <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="Nombretxt" placeholder="Nombre" >
+                    <input type="text" class="form-control" id="Nombretxt" placeholder="Nombre">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Direccion </label>
-                    <input type="text" class="form-control" id="Direcciontxt" placeholder="Direccion" >
+                    <input type="text" class="form-control" id="Direcciontxt" placeholder="Direccion">
                 </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Numero de Departamento-casa </label>
-                    <input type="text" class="form-control" id="NroDeptonum" placeholder="Numero" >
+                    <input type="text" class="form-control" id="NroDeptonum" placeholder="Numero">
                 </div>
-                <div class="mb-3" >
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label"> Numero de tarjeta</label>
-                    <input type="text" class="form-control" id="NroTarjetanum" placeholder="Numero de tarjeta" >
+                    <input type="text" class="form-control" id="NroTarjetanum" placeholder="Numero de tarjeta">
                 </div>
-                <h3>Tu total es de: $44.600<h3>  
-                <div class="contenedor_boton">  <button type="button" class="btn btn-primary" id="btnpagar" onclick="move()">PAGAR</button> </div>
-                <br>
-                <br>
+                <h3>Tu total es de: $44.600<h3>
+                        <div class="contenedor_boton"> <button type="button" class="btn btn-primary" id="btnpagar"
+                                onclick="move()">PAGAR</button> </div>
+                        <br>
+                        <br>
             </div>
         </main>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
 
 
         <footer>
             <h5>copyright © Ecommerce MexicanFood</h5>
         </footer>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
         <script src='../JS/main.js'></script>
+    </div>
 </body>
 
 </html>
